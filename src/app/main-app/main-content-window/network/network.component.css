@@ -1,0 +1,11 @@
+.network-layout{
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+
+.network-content{
+
+}

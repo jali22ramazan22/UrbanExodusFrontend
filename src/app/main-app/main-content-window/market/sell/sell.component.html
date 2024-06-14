@@ -1,0 +1,54 @@
+<div class="buy-layout">
+  <div class="panel-layout">
+    <div class="categories-title">
+      <p>Категории</p>
+    </div>
+    <div class="search-panel">
+      <input type="text" [(ngModel)]="searchText" placeholder="Поиск Товара">
+      <div class="search-btn">
+        <img src="assets/img/search.png">
+      </div>
+    </div>
+
+    <div class="sorting-panel">
+      <app-sorting-dropdown></app-sorting-dropdown>
+    </div>
+
+
+  </div>
+  <div class="purchase-layout">
+
+    <app-category-list></app-category-list>
+
+    <div class="items">
+      <div class="items-list">
+        @if(selectedCategory){
+          @for(item of getItemsWithSorting() | filter:searchText; track item){
+            <div class="goods-item" >
+              <div class="image-goods-item-container">
+                <img [src]="item.imagePath"/>
+              </div>
+              <div class="goods-title">
+                <a>Предмет</a>
+                <p>{{item.itemTitle}}</p>
+              </div>
+              <div class="goods-title">
+                <a>Ожидаемая Цена</a>
+                <p>${{item.price}}</p>
+              </div>
+
+              <div class="purchase-container">
+                <button>Купить</button>
+              </div>
+              <app-additional-actions-dropdown [additionalActionsListParams]="['market', 'additional-actions-panel']"></app-additional-actions-dropdown>
+            </div>
+          }
+        } @else{
+          <div class="unselected-title">
+            <p style="text-align: center">Не выбрана категория предметов</p>
+          </div>
+        }
+     </div>
+    </div>
+  </div>
+</div>

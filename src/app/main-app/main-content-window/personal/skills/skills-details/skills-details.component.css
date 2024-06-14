@@ -1,0 +1,23 @@
+.skill-details-title{
+  text-align: center;
+  font-size: 1.03vh;
+  padding: 0.5vh;
+}
+
+
+.skill-tree{
+  overflow-y: auto;
+  height: 51vh;
+  padding: 1vw;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.skill-tree-level{
+  padding: 1vw;
+  border-radius: 1vw;
+  align-items: center;
+  justify-items: center;
+}

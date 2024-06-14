@@ -1,0 +1,78 @@
+<div class="buy-layout">
+
+  <div class="panel-layout">
+
+    <div class="categories-title">
+      <p>Категории</p>
+    </div>
+
+    <div class="search-panel">
+      <input type="text" [(ngModel)]="searchText" placeholder="Поиск Товара">
+      <div class="search-btn">
+        <img src="assets/img/search.png">
+      </div>
+    </div>
+    @if(selectedCategory){
+    <div class="sorting-panel">
+      <app-sorting-dropdown></app-sorting-dropdown>
+    </div>
+
+    <div class="provider-panel">
+
+      <app-provider-dropdown></app-provider-dropdown>
+    </div>
+  }
+
+
+</div>
+
+  <div class="purchase-layout">
+
+      <app-category-list></app-category-list>
+
+    <div class="items">
+      <ng-template cdkPortal>
+        @if(detailsStatus){
+          <app-absolute-overlay>
+            <app-item-details></app-item-details>
+          </app-absolute-overlay>
+        }
+      </ng-template>
+
+      <div class="items-list">
+      @if(selectedCategory){
+          @for(item of getItemsWithSorting() | filter:searchText; track item){
+            <app-fade-in-wrapper>
+              <div class="goods-item">
+              <div class="image-goods-item-container">
+                <img [src]="item.imagePath"/>
+              </div>
+              <div class="goods-title">
+                <a>Название</a>
+                <p>{{item.itemTitle}}</p>
+              </div>
+              <div class="goods-title">
+                <a>Цена</a>
+                <p>${{item.price}}</p>
+              </div>
+
+              <div class="purchase-container">
+                <button>Купить</button>
+              </div>
+              <app-additional-actions-dropdown
+                [item]="item"
+                [additionalActionsListParams]="['market', 'additional-actions-panel']" >
+              </app-additional-actions-dropdown>
+            </div></app-fade-in-wrapper>
+          }
+      }
+
+      @else{
+        <div class="unselected-title">
+          <p style="text-align: center">Не выбрана категория предметов</p>
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+</div>

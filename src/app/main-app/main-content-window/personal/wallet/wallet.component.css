@@ -1,0 +1,93 @@
+.wallet-layout{
+  position: absolute;
+  display: grid;
+  left: 1%;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  width: 98%;
+  height: 97%;
+}
+
+.left-layout, .center-layout, .right-layout {
+  display: grid;
+  position: relative;
+  top: 3%;
+  height: 93%;
+  left: 5%;
+
+}
+.right-layout,
+.currency-actions, .wallets, .wallet-analytics,
+.transactions{
+  background-color: #424242;
+  box-shadow: black 2px 3px 3px;
+  border-radius: 0.6vw;
+}
+
+
+
+.left-layout{
+  grid-template-rows: 1.3fr 1fr;
+  gap: 0.6vw
+}
+
+.wallets, .currency-actions{
+  display: grid;
+  grid-template-rows: 0.5fr 2fr;
+}
+
+.left-layout-list{
+
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 20vh;
+}
+
+
+.left-layout-title{
+  font-size: 1vw;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 2vh;
+}
+.left-layout-item{
+
+  margin-left: 1.5vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-layout-item:hover{
+  transition: 0.5s ease-out;
+  background-color: #4f4f4f;
+}
+
+.left-layout-item img{
+  width: 1vw;
+  padding-right: 0.5vw;
+}
+.left-layout-item p{
+  font-size: 0.7vw;
+}
+
+
+
+
+.center-layout{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  width: 94%;
+  gap: 0.5vw;
+}
+
+.right-layout{
+  position: relative;
+  width: 90%;
+  right: 10%;
+}

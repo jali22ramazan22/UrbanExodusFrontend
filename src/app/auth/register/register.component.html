@@ -1,0 +1,13 @@
+<form class="registration" [formGroup]="registrationForm" (ngSubmit)="OnSubmit()">
+  <label> Логин </label>
+  <input type="text" required formControlName="username">
+  <label> Почта</label>
+  <input type="text" required formControlName="email">
+  <label>Пароль</label>
+  <input type="password" required formControlName="password">
+  <label>Потвердить пароль</label>
+  <input type="password" required formControlName="password_confirmation">
+  <button [disabled]="!registrationForm.valid" routerLink="../login">  Зарегистрироваться</button>
+
+</form>
+<p class="switch-title" id="registration-switch-title" routerLink="../login"> Уже в сети? </p>

@@ -1,0 +1,15 @@
+<div class="perk-overlay">
+  <div class="perk-overlay-title">
+    <p>{{perk.perkTitle}}</p>
+    @if(!perk.taken){
+      <button (click)="onClosePerk()">Взять Навык</button>
+    } @else {
+      <p style="color: #1c7500">Навык уже взят</p>
+    }
+  </div>
+  <div class="perk-overlay-description">
+    <p>Бонус: {{perk.bonuses}}</p>
+    <p>Умение: </p>
+  </div>
+  <button (click)="onClosePerk()">Закрыть</button>
+</div>

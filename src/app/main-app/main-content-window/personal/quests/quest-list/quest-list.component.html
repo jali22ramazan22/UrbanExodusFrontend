@@ -1,0 +1,32 @@
+<div class="quest-navbar">
+  <div class="quest-type-navbar">
+    @for(item of questTypeHeaderItems; track item){
+      <div class="quest-type-link" (click)="onSelectQuestType(item.type)"
+           >
+        <p [ngClass]="{'selected': questTypeSelected === item.type}">
+          {{ item.value }}
+        </p>
+      </div>
+    }
+  </div>
+  <div>
+    <hr style="width: 90%">
+  </div>
+  <div class="quest-type-list-layout">
+    @if (questList && questList.length) {
+      <div class="quest-type-list">
+        @for (item of questList; track item) {
+          <div (click)="onSelectQuest(item)" [ngClass]="{'selected': item === questSelected}">
+            <p>{{ item.title }}</p>
+          </div>
+        }
+      </div>
+    } @else {
+      <div class="quest-type-list" style="align-items: center">
+        <p>
+          Вы еще не взяли какое-либо задание этого типа
+        </p>
+      </div>
+    }
+  </div>
+</div>

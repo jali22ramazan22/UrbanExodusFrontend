@@ -1,0 +1,11 @@
+<div class="categories" >
+  @for(item of categories; track item){
+    <div (click)="onSelectCategory(item.value)" class="category-container">
+      <div class="category-image-container"
+           [ngClass]="{'selected-category': item.value === (selectedCategory)}">
+        <img [src]="item.imgPath"/>
+      </div>
+      <a>{{ item.value }}</a>
+    </div>
+  }
+</div>

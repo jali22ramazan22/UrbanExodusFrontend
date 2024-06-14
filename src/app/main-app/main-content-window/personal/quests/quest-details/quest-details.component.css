@@ -1,0 +1,116 @@
+.quest-details {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1.2fr 0.01fr 5.5fr;
+  top: 3%;
+  width: 92%;
+  height: 93%;
+  background-color: #2f2f2f;
+  left: 5%;
+  box-shadow: black 0.2vw 0.5vw 0.5vw;
+  border-radius: 0.6vw;
+}
+
+
+.quest-detail-header {
+  padding: 1vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.quest-detail-header div {
+  align-content: center;
+  text-align: center;
+  color: #e3e3e3;
+}
+
+.quest-detail-header img {
+  width: 5vw;
+}
+
+.quest-detail-header button {
+  position: relative;
+  border: 0;
+  padding: 1.5vw;
+  width: 9vw;
+  height: 2vh;
+  border-radius: 1vw;
+  background-color: #1c7500;
+  color: white;
+  font-family: FreeSans, serif;
+  font-size: 0.85vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  transition: 0.25s ease-out;
+  align-items: center;
+}
+
+.quest-detail-header button:hover {
+  transition: 0.25s ease-out;
+  background-color: #258c00;
+}
+
+.quest-detail-header button:disabled {
+  background-color: #6c926c;
+}
+
+.quest-detail-header button:active:not(:disabled) {
+  background-color: #3bec00;
+  transition: 0.1s ease-out;
+  scale: calc(0.9);
+}
+.quest-status{
+  display: flex;
+  flex-direction: column;
+
+}
+.quest-title{
+  font-size: 1vw;
+}
+.quest-description-text{
+
+  font-size: 1.5vh;
+}
+.quest-status-content{
+  display: flex;
+  flex-direction: column;
+}
+.quest-detail-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.gray-header {
+  color: #989898;
+}
+
+.quest-detail-main {
+  margin-left: 1vw;
+  font-size: 1.55vh;
+}
+
+.quest-progress {
+  font-size: 0.7vw;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  align-items: center;
+  width: 50%;
+  gap: 1em;
+}
+
+.quest-progress p {
+  margin: 0;
+  padding-right: 0.7vw;
+}
+
+.quest-description {
+  overflow-y: hidden;
+  height: auto;
+  width: 93%;
+}
+.left-time p{
+  margin-left: 0;
+  font-size: 0.7vw;
+}
+

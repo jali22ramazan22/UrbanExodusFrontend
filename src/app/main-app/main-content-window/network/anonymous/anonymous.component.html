@@ -1,0 +1,22 @@
+<app-fade-in-wrapper>
+  <div class="anonymous-layout">
+  <app-anonymous-list />
+
+  @if(selectedChat){
+    <app-anonymous-chat />
+    <div class="message-input">
+      <div>
+        <form [formGroup]="messageInput" (ngSubmit)="onSendMessage()">
+          <input type="text" formControlName="messageInput">
+        </form>
+
+      </div>
+      <div>
+        <img src="assets/img/enter.png">
+      </div>
+    </div>
+  }
+
+</div>
+
+</app-fade-in-wrapper>

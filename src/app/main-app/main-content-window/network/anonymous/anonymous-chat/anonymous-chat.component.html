@@ -1,0 +1,14 @@
+<div class="system-chat">
+  @for(item of loadedChatContent; track item){
+    <div class="anonymous-message-item">
+      <hr>
+      <div class="anonymous-message-author-title">
+        <a id="message-author">{{item.sender}}</a>
+        <a id="message-content">Написал {{ item.sent | PublishedTimePipe | async}}</a>
+      </div>
+      <div class="anonymous-message">
+        <p>{{item.messageContent}}</p>
+      </div>
+      <hr>
+    </div>
+  }

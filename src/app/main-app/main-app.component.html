@@ -1,0 +1,65 @@
+<div class="layout">
+  <div class="header-bar">
+    <div class="user-info">
+      <div class="user-info-text">
+        <p>Пользователь: JAD</p>
+        <p>Март 12 13:30</p>
+      </div>
+    </div>
+    <div></div>
+    <div class="wallet-info">
+      <div class="wallet-info-items">
+        @for(item of walletInfoItems; track item){
+          <div class="wallet-item">
+            <img [src]="item.imgPath" alt="">
+            <p>{{item.value}}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="main-content">
+      <div class="side-bar">
+        <div></div>
+        <div></div>
+        <div class="icon-list">
+          @for(item of sideBarItems; track item){
+            <img [src]="item.imgPath" alt="" [routerLink]="item.routerLinkParams"
+                 (click)="item.routerLinkParams? openExtraWindow(item): null">
+          }
+
+        </div>
+      </div>
+      <div class="navigation-bar">
+        <div class="title-container">
+          <div class="title">
+            Единая Сеть Urban Exodus
+          </div>
+        </div>
+        <div>
+
+          <div class="navigation-links">
+            @for(item of navLinkItems; track item){
+              <div class="nav-link-container"
+                   routerLinkActive="simple-selected"
+                   [routerLink]="item.routerLinkParams">
+                <div class="nav-link" >
+                  <img [src]="item.imgPath" alt="">
+                  <p>{{ item.value }}</p>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+      <div class="content-window" >
+        <router-outlet></router-outlet>
+
+      </div>
+      <ng-template cdkPortal>
+        <app-extra-content-window [componentName]="extraWindowComponentName"></app-extra-content-window>
+      </ng-template>
+    </div>
+  </div>
+</div>

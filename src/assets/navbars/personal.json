@@ -1,0 +1,22 @@
+[
+  {
+    "value": "Задания",
+    "routerLinkParams": ["quests"]
+  },
+  {
+    "value": "Навыки",
+    "routerLinkParams": ["skills"]
+  },
+  {
+    "value": "Кошелек",
+    "routerLinkParams": ["wallet"]
+  },
+  {
+    "value": "Инвентарь",
+    "routerLinkParams": ["inventory"]
+  },
+  {
+    "value": "Профиль",
+    "routerLinkParams": ["profile"]
+  }
+]

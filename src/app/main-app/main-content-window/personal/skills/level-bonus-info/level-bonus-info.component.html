@@ -1,0 +1,69 @@
+<div>
+  <div class="info-layout-title" >
+    <img [src]="computeImagePath('level.png')" alt="">
+    <p>Уровень 12</p>
+  </div>
+</div>
+<div class="level-bonus-main-info">
+  <div class="bonus">
+    <div class="level-bonus-title">
+      <p>Текущие Бонусы</p>
+    </div>
+    <div class="bonus-info">
+      <div class="bonus-list">
+        @if(selectedPerks){
+          @for(bonus of bonuses; track bonus){
+            <div>
+              <p>{{bonus}}</p>
+            </div>
+          }
+        } @else {
+          <div>Действующих бонусов нет</div>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="char-info">
+    <div class="level-bonus-title">
+      <p>Характеристики</p>
+    </div>
+    <div class="main-char">
+      <div class="char-item">
+        <div>
+          <p>Здоровье</p>
+        </div>
+        <div class="char-status">
+          <app-progress-bar-card [progress]="{progress: 78, overall: 100}" [height]="1.5" ></app-progress-bar-card>
+          <div class="char-status-info">
+            <p>78/100</p>
+          </div>
+        </div>
+      </div>
+      <div class="char-item">
+        <div>
+          <p>Патроны</p>
+        </div>
+        <div class="char-status">
+          <app-progress-bar-card [progress]="{progress: 3400, overall: 4000}" [height]="1.5" ></app-progress-bar-card>
+          <div class="char-status-info">
+            <p>3400/4000</p>
+          </div>
+        </div>
+      </div>
+      <div class="char-item">
+        <div>
+          <p>Диск</p>
+        </div>
+        <div class="char-status">
+          <app-progress-bar-card [progress]="{progress: 300, overall: 1000}" [height]="1.5" ></app-progress-bar-card>
+          <div class="char-status-info">
+            <p>300MB/1GB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="align-content: center;">
+  <hr style="width: 100%; border: 0; height: 0.30vh">
+</div>

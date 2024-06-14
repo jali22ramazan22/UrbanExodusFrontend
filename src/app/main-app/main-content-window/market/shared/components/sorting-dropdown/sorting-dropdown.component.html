@@ -1,0 +1,14 @@
+<div class="dropdown"  (appClickOutside)="onHandleClickOutside()">
+  <div class="dropdown-header" (click)="onToggleCondition()" >
+    <p>{{selectedOption != null? ' ' + selectedOption : 'Сортировка'}}</p>
+    <img [src]="computeImagePath('caret-down.png')">
+  </div>
+  @if(isMenuOpened){
+    <div class="dropdown-content">
+      @for(item of dropdownContentItems; track item){
+        <a (click)="onSelectSorting(item)">{{item.value}}</a>
+      }
+    </div>
+  }
+
+</div>

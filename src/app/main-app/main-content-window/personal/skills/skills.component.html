@@ -1,0 +1,22 @@
+<div class="skills-layout">
+  <div>
+    <div class="info-layout">
+        <div class="level-bonus">
+          <app-level-bonus-info></app-level-bonus-info>
+        </div>
+
+        <div class="skills-info">
+          @if(currentPanel === 'skill-navigation'){
+            <app-skills-info [skillsNavbarItems]="skillsNavbarItems"></app-skills-info>
+          } @else if (currentPanel === 'skill-level'){
+            <app-skills-level-dashboard [skillsNavbarItems]="skillsNavbarItems"></app-skills-level-dashboard>
+          }
+        </div>
+
+    </div>
+  </div>
+  <div class="skills-tree">
+    <app-skills-details></app-skills-details>
+  </div>
+
+</div>

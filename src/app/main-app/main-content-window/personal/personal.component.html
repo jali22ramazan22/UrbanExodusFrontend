@@ -1,0 +1,17 @@
+
+<app-fade-in-wrapper>
+  <div class="navbar-content-layout" >
+    <div class="main-window-navbar">
+      <div class="main-window-navbar-item"
+           *ngFor="let item of personalNavbarItems"
+           [routerLink]="item.routerLinkParams"
+           routerLinkActive="navbar-selected">
+        <p>{{item.value}}</p>
+      </div>
+
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</app-fade-in-wrapper>

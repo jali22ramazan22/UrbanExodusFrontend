@@ -1,0 +1,92 @@
+.anonymous-layout{
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  color: #00ff04;
+  font-family: FreeMono, serif;
+
+}
+.anonymous-header{
+  display: flex;
+  flex-direction: row;
+  padding-right: 1vh;
+  align-items: center;
+  gap: 3vh;
+  font-size: 1vw;
+  margin-left: 2vw;
+}
+.system-chat{
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  overflow-y: auto;
+  height: 45vh;
+}
+
+.message-input{
+
+}
+.anonymous-message-item{
+  font-size: 0.8vw;
+  padding: 0.25vw;
+  margin-left: 2vw;
+  width: 93%;
+}
+.anonymous-list{
+  margin-top: 0.4vh;
+  color: #a682ee;
+  font-size: 0.55vw;
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.anonymous-list a:hover{
+  color: #e2d9f6;
+}
+
+.anonymous-message-author-title{
+  padding-top: 2vh;
+
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+.anonymous-message{
+  padding-bottom: 2vh;
+}
+#message-author{
+  font-size: 0.95vw;
+  color: #ffc700;
+}
+
+.message-input{
+  border-radius: 0.5vw;
+  position: relative;
+  background-color: #494949;
+  width: 50%;
+  height: 80%;
+  left: 25.5%;
+  display: grid;
+  grid-template-columns: 12fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+.message-input input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #4df62e;
+  font-weight: bold;
+  font-family: "IBM 3270", serif;
+  height: 2vh;
+  padding-left: 1vw;
+  font-size: 2vh;
+}
+.message-input input:focus{
+  width: 95%;
+  outline: none;
+}
+.message-input img{
+  width: 2vw;
+}

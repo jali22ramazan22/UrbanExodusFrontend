@@ -1,0 +1,22 @@
+.search-hint-dropdown{
+  position: absolute;
+  left: 12.5%;
+  margin-top: 1vh;
+  min-width: 75%;
+  background-color: #494949;
+
+}
+
+.search-hint-item{
+  transition: 0.5s ease;
+  padding: 0.25vh;
+  text-shadow: none;
+}
+
+.search-hint-item:hover{
+  background-color: #707070;
+}
+.search-hint-item p{
+  font-size: 1.25vh;
+  margin-left: 0.5vw;
+}

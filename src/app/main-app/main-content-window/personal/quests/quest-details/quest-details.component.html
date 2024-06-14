@@ -1,0 +1,61 @@
+<div class="quest-details">
+ @if(selectedQuest){
+   <div class="quest-detail-header">
+     <div>
+       <img [src]="selectedQuest.imgPath">
+     </div>
+     <div>
+       <p class="quest-title">{{ selectedQuest.title }}</p>
+     </div>
+     <div>
+       <button class="quest-button" [disabled]="!selectedQuest.isFinished">Выполнить</button>
+     </div>
+   </div>
+   <div class="quest-separator">
+     <hr style="width: 90%">
+   </div>
+   <div class="quest-detail-main" >
+     <div class="quest-description">
+       <div>
+         <p class="gray-header">Описание</p>
+       </div>
+       <div class="quest-description-text">
+         <p>
+           {{selectedQuest.description}}
+         </p>
+       </div>
+     </div>
+     <div class="quest-status">
+       <div>
+         <p class="gray-header">Статус</p>
+       </div>
+         <div class="quest-status-content" >
+           @if(selectedQuest.progressType === 'countType'){
+             <div class="quest-progress">
+               <p>Прогресс: </p>
+               <app-progress-bar-card [progress]="progress"></app-progress-bar-card>
+               <p>{{ collectedAmount}}/{{overallAmount}} {{itemName}}</p>
+             </div>
+             @if(selectedQuest.timeLeft != null){
+               <div class="left-time" >
+                 <p>Осталось Времени: {{ selectedQuest.timeLeft | leftTimeToFinish | async}} </p>
+               </div>
+             }
+           } @else if (selectedQuest.progressType === 'eventType'){
+
+             @for(event of events; track event){
+                  <app-event-item [eventItem]="event" />
+               }
+           }
+         </div>
+     </div>
+     <div class="quest-extra-info">
+       @if(additionalInfo){
+         <p class="gray-header">
+           Дополнительная Информация
+         </p>
+       }
+     </div>
+   </div>
+ }
+</div>

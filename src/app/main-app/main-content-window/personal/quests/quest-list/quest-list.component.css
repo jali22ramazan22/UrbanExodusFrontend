@@ -1,0 +1,79 @@
+
+.quest-type-list-layout {
+  display: grid;
+  grid-template-columns: 18fr 1fr;
+}
+
+.quest-type-list {
+  padding: 2vh;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 50vh;
+
+}
+
+.quest-type-list div:hover {
+  transition: 0.25s ease-out;
+  background-color: #8e8e8e;
+  border-radius: 0.5vw;
+
+}
+
+
+
+.quest-type-list div {
+  transition: 0.25s ease-out;
+  position: relative;
+  margin-top: 0.5vh;
+  border-radius: 0.5vw;
+}
+
+.quest-type-list p {
+  font-size: 0.8vw;
+  margin-left: 0.5vw;
+}
+
+.quest-type-link {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.5vw ;
+  padding-left: 0.8vw ;
+  padding-right: 0.8vw ;
+}
+
+.quest-type-link p {
+  transition: 0.5s ease-out;
+  border-radius: 0.6vw;
+}
+
+.quest-type-link p:hover {
+  transition: 0.5s ease-out;
+  background-color: #4f4f4f;
+  border-radius: 0.6vw;
+}
+.quest-title{
+  font-size: 0.95vw;
+}
+.quest-type-navbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.9vw;
+}
+.quest-navbar {
+  position: relative;
+  display: grid;
+  grid-template-rows: 0.5fr 0.1fr 7fr;
+  top: 3%;
+  height: 93%;
+  background: rgb(70,70,70);
+  background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(54,54,54,1) 50%);
+  left: 5%;
+  box-shadow: black 2px 3px 3px;
+  border-radius: 0.6vw;
+}
+
+

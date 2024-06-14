@@ -1,0 +1,8 @@
+<form [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
+  <label> Псевдоним </label>
+  <input type="text" required formControlName="username">
+  <label> Пароль </label>
+  <input type="password" required formControlName="password">
+  <p class="switch-title" routerLink="../register"> Новый в сети? Зарегистрируйся </p>
+  <button [disabled]="!loginForm.valid">Войти в Сеть</button>
+</form>

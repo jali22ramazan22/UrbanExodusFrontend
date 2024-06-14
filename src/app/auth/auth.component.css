@@ -1,0 +1,126 @@
+.auth{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  width: 100%;
+}
+.background-auth{
+  display: flex;
+  background: linear-gradient(180deg, rgb(54, 54, 54), rgb(0, 0, 0));
+  background-size: 180% 180%;
+  animation: gradient-animation 20s ease infinite;
+}
+
+.registration{
+  height: 300px
+}
+form {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+
+.auth-container{
+  border-radius: 2px;
+  position: absolute;
+  background-color: rgb(44, 44, 44);
+  width: 25%;
+  height: 50%;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input:focus {
+  outline: none;
+  background-color: #5a5a5a;
+}
+
+
+
+
+
+label {
+  line-height: 2;
+  display: block;
+  margin: 0.25vh;
+  font-size: 0.95vw;
+  text-align: center;
+  text-shadow: none;
+}
+
+
+button {
+  position: absolute;
+  transition: background-color 0.5s ease 0.01s;
+  padding: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  bottom: 10%;
+  left: 10%;
+  border: none;
+  font-family: FreeSans, sans-serif;
+  color: #d5d5d5;
+  cursor: pointer;
+  background-color: #292929;
+  width: 80%;
+  font-size: 1vw;
+  line-height: 1.5;
+  font-weight: 600;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+input{
+  transition: background-color 0.3s ease 0.01s;
+  color: #e3e3e3;
+  font-size: 1vw;
+  font-family: FreeSans, serif;
+  position: relative;
+  text-shadow: none;
+  padding: 5px;
+  transform: translateX(5%);
+  width: 90%;
+  height: 8%;
+  background-color: #171717;
+  border-width: 0;
+}
+
+.switch-title{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vh;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+  padding: 12px;
+
+}
+.switch-title:hover{
+
+  transition: 0.5s;
+}
+
+@keyframes blink {
+  0% { background-color: #ff0000; }
+  50% { background-color: transparent; }
+  100% { background-color: #cc0000; }
+}
+
+input.ng-invalid.ng-touched {
+  animation: blink 0.5s;
+  background-color: #c90000;
+}
+

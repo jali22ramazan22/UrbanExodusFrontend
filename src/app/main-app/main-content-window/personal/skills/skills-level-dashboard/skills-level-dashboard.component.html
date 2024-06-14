@@ -1,0 +1,20 @@
+<div>
+  <div class="info-layout-title" (click)="onSwitchPanel()">
+    <p >Уровни Навыков</p>
+  </div>
+
+  <div class="skill-level-list">
+    @for(item of skills; track item){
+      <div class="skill-level-item">
+        <div class="skill-title">
+          <p>{{ item.skillTitle}}</p>
+        </div>
+        <div class="skill-level" appLevelColor [inputLevel]="onCalculateSkillsLevel(item)">
+          <p> {{onCalculateSkillsLevel(item)}} </p>
+        </div>
+      </div>
+    }
+  </div>
+
+
+</div>

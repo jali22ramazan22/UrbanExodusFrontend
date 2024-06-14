@@ -1,0 +1,4 @@
+.map-overlay{
+  display: grid;
+  grid-template-columns: auto;
+}

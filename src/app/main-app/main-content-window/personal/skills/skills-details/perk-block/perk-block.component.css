@@ -1,0 +1,23 @@
+.perk-container{
+  width: 7vw;
+  height: 5vh;
+  font-size: 1.25vh;
+  padding: 1vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease;
+
+}
+
+.perk-container:hover{
+
+  transition: 0.5s ease;
+  background-color: #8e8e8e;
+
+}
+.perk-container:active{
+
+  scale: calc(0.95);
+}

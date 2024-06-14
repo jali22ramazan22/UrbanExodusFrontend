@@ -1,0 +1,23 @@
+.extra-window{
+  display: grid;
+  grid-template-rows: 1fr 20fr;
+  background-color: rgba(40, 40, 40);
+  box-shadow: black 0 0.25vh 0.25vh;
+  border-radius: 1vw;
+  width: 50vw;
+  height: 65vh;
+}
+.extra-window-content{
+  background-color: #0e0e0e;
+  -webkit-border-bottom-left-radius: 1vw;
+  -webkit-border-bottom-right-radius: 1vw;
+}
+.extra-window-header{
+  text-align: center;
+  align-content: center;
+}
+
+.extra-window-header p{
+  padding: 0;
+  margin: 1vh;
+}

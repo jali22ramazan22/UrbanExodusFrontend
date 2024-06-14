@@ -1,0 +1,86 @@
+{
+  "common-navbar": [
+    {
+      "value": "Купить",
+      "routerLinkParams": ["buy"]
+    },
+    {
+      "value": "Продать",
+      "routerLinkParams": ["sell"]
+    }
+  ],
+  "categories":
+    [
+      {
+        "value": "Оружие",
+        "imagePath": "firearm.png"
+      },
+      {
+        "value": "Броня",
+        "imagePath": "armor.png"
+      },
+      {
+        "value": "Разгруз",
+        "imagePath": "tactic.png"
+      },
+      {
+        "value": "Патроны",
+        "imagePath": "ammo.png"
+      },
+      {
+        "value": "Медицина",
+        "imagePath": "medicine.png"
+      },
+      {
+        "value": "Еда",
+        "imagePath": "food.png"
+      },
+      {
+        "value": "Обвес",
+        "imagePath": "optics.png"
+      },
+      {
+        "value": "Материалы",
+        "imagePath": "build.png"
+      }
+    ],
+  "sorting-panel": [
+    {
+      "value": "По убыванию",
+      "type": "decrease"
+    },
+    {
+      "value": "По возрастанию",
+      "type": "increase"
+    },
+    {
+      "value": "Очистить",
+      "type": "null"
+    }
+  ],
+  "provider-panel": [
+    {
+      "value": "НАТО",
+      "type": "nato"
+    },
+    {
+      "value": "Армия КЗ",
+      "type": "kz"
+    },
+    {
+      "value": "Очистить",
+      "type": "null"
+    }
+  ],
+  "additional-actions-panel": [
+    {
+      "value": "Подробнее"
+    },
+    {
+      "value": "Сравнить"
+    },
+    {
+      "value": "Применить навык"
+    }
+  ]
+}

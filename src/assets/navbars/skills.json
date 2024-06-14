@@ -1,0 +1,44 @@
+{
+  "skillsNavbarItems": [
+    {
+      "imagePath": "scouting.png",
+      "value": "Разведка"
+    },
+    {
+      "imagePath": "netrunning.png",
+      "value": "Нетраннинг"
+    },
+    {
+      "imagePath": "barter.png",
+      "value": "Бартер"
+    },
+    {
+      "imagePath": "charisma.png",
+      "value": "Харизма"
+    },
+    {
+      "imagePath": "trading.png",
+      "value": "Трейдинг"
+    },
+    {
+      "imagePath": "analysis.png",
+      "value": "Анализ"
+    },
+    {
+      "imagePath": "weaponsmith.png",
+      "value": "Оружейник"
+    },
+    {
+      "imagePath": "stalking.png",
+      "value": "Сталкинг"
+    },
+    {
+      "imagePath": "medicine.png",
+      "value": "Медицина"
+    },
+    {
+      "imagePath": "build.png",
+      "value": "Строительство"
+    }
+  ]
+}

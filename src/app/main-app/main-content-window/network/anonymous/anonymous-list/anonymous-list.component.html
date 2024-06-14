@@ -1,0 +1,16 @@
+<div class="anonymous-header">
+  <div>
+    <a>Чаты</a>
+  </div>
+  <div class="anonymous-list">
+    @for(item of anonymousChatsItems; track item){
+      <div (click)="onSelectChat(item)">
+        <a>{{item.value}}</a>
+      </div>
+    }
+  </div>
+  <div class="anonymous-title">
+    <h2>Мы Сеть - Мы единство</h2>
+  </div>
+
+</div>

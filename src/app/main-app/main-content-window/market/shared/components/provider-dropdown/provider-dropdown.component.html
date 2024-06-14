@@ -1,0 +1,13 @@
+<div class="dropdown" (appClickOutside)="onHandleClickOutside()">
+  <div class="dropdown-header" (click)="onToggleCondition()" >
+    <p>Поставщик - {{selectedOption? selectedOption: 'Все'}}</p>
+    <img [src]="computeImagePath('warehouse.png')">
+  </div>
+  @if(isMenuOpened){
+    <div class="dropdown-content">
+      @for(item of providerContentItems; track item){
+        <a (click)="onSelectProvider(item)">{{item.value}}</a>
+      }
+    </div>
+  }
+</div>

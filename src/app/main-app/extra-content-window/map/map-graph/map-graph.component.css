@@ -1,0 +1,8 @@
+.map-holder{
+  position: relative;
+  overflow-y: scroll;
+  width: 50vw;
+  height: 62vh;
+  opacity: 0.6;
+}
+

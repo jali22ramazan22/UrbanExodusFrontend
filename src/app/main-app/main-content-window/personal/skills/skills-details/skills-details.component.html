@@ -1,0 +1,34 @@
+<div>
+    <div class="skill-details-title" >
+      <h1>Дерево Навыков</h1>
+      <hr>
+    </div>
+
+     <ng-template cdkPortal>
+       @if(selectedPerk && selectedPerk.taken){
+       <app-absolute-overlay>
+         <app-perk-overlay-container></app-perk-overlay-container>
+       </app-absolute-overlay>
+       }
+     </ng-template>
+
+
+    <div class="skill-tree">
+
+
+
+      @for(level of width; track level; let i=$index){
+          <div class="skill-tree-level" [ngStyle]="{'display': 'grid', 'grid-template-columns': 'repeat(' + level + ', 1fr)'}">
+            @for(number of Array.from({length: level}); track number; let j=$index){
+              <app-perk-block
+                [perk]="perks[cumulativeLength(i)+j]"
+                (click)="onSelectPerk(perks[cumulativeLength(i)+j])"
+              >
+              </app-perk-block>
+            }
+          </div>
+      }
+    </div>
+
+</div>
+

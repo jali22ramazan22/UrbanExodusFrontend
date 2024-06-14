@@ -1,0 +1,38 @@
+.additional-actions-dropdown img:hover{
+  transition: 0.25s ease;
+  background-color: #9f9f9f;
+  border-radius: 0.25vw;
+}
+.additional-actions-dropdown{
+  margin-left: 3.5vw;
+}
+.additional-actions-dropdown img{
+  transition: 0.25s ease;
+  position: relative;
+  margin-top: 0.5vh;
+
+}
+.dropdown-content-add{
+  box-shadow: #1c1c1c 0 0.2vw 0.2vw;
+  border-radius: 0.25vw;
+  position: absolute;
+  right: 0.1vw;
+  min-width: 5vw;
+  background-color: #343434;
+  z-index: 1;
+}
+
+.dropdown-content-add a {
+  border-radius: 0.25vw;
+  font-size: 0.6vw;
+  color: #fff;
+  padding: 1.5vh;
+  text-decoration: none;
+  display: block;
+  transition: 0.25s ease-in;
+}
+
+.dropdown-content-add a:hover {
+  transition: 0.25s ease-in;
+  background-color: #555;
+}

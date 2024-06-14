@@ -1,0 +1,26 @@
+<div class="search-bar">
+    <div class="search-image-container">
+      <img src="assets/img/search.png">
+    </div>
+    <div>
+      <form [formGroup]="search" (ngSubmit)="onNavigate()">
+        <input
+          type="text"
+          id="search"
+          formControlName="searchBar"
+          autocomplete="off"
+          placeholder="Поиск"
+          #input
+          (dblclick)="toggleHints()">
+      </form>
+    </div>
+
+</div>
+
+@if(startedTyping){
+  <app-site-hints-dropdown
+    (siteSelectedFromHints)="onHandleHintCompletion($event)"
+    (appClickOutside)="toggleHints()"
+    [searchText]="search.value['searchBar']"
+    />
+}

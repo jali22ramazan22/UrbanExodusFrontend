@@ -1,0 +1,260 @@
+.navbar-content-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.buy-layout{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.25fr 2fr;
+}
+.panel-layout{
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1.2fr;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.categories-title{
+  position: relative;
+  right: 1%;
+  font-size: 0.9vw;
+  color: #9b9b9b;
+}
+
+
+
+
+.search-panel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-panel img{
+  position: relative;
+  left: 0.3vw;
+  width: 1.35vw;
+}
+.search-btn{
+
+  position: relative;
+  background-color: #4b4b4b;
+  border-radius: 0.8vw;
+  padding: 0.25vw;
+  margin-left: 0.2vw;
+  width: 2vw;
+}
+.search-btn:hover{
+  background-color: #707070;
+}
+.search-panel input{
+  border: none;
+  border-radius: 2vw;
+  height: 4vh;
+  width: 20vw;
+  transition: 0.25s ease-in-out;
+  background-color: #4f4f4f;
+  caret-color: #eeeeee;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8vw;
+  padding-left: 2vh;
+}
+
+
+.search-panel input::placeholder{
+  padding-bottom: 1vh;
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: #9b9b9b;
+  transition: 0.25s ease-in-out;
+}
+.search-panel input:focus{
+  transition: 0.25s ease-in-out;
+  background-color: #7a7a7a;
+  outline: none;
+  padding-left: 2vh;
+}
+
+.sorting-panel img{
+  width: 1vw;
+  padding: 0.25vw;
+}
+.dropdown-header{
+  font-size: 0.8vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.25s ease-in-out;
+}
+
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.sorting-panel{
+  position: relative;
+  left: 25%;
+}
+
+
+.purchase-layout{
+  position: relative;
+  display: grid;
+  height: 95%;
+  grid-template-columns: 2fr 7fr;
+  gap: 2vw;
+  left: 2%;
+  width: 96%;
+}
+.categories, .items{
+  box-shadow: black 0.2vw 0.5vw 0.5vw;
+  border-radius: 0.6vw;
+  background-color: #383838;
+}
+
+
+.items-list{
+  top: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 2vh;
+  overflow-y: auto;
+  height: 52vh;
+  gap: 2vh;
+  overflow-x: hidden;
+}
+.goods-item{
+  width: 100%;
+  border-radius: 0.5vw;
+  height: 10vh;
+  background-color: #2c2c2c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  min-height: 10vh;
+  gap: 0.1vw;
+  align-items: center;
+  text-align: left;
+  justify-items: center;
+}
+.image-goods-item-container{
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 0.5vw;
+  width: 75%;
+  height: 100%;
+  scale: calc(0.70);
+}
+.goods-img-template{
+
+}
+.goods-title{
+  display: flex;
+  flex-direction: column;
+}
+.goods-title a{
+  font-size: 0.75vw;
+  color: #4f4f4f;
+}
+.goods-title p{
+  font-size: 0.7vw;
+}
+
+.purchase-container{
+  position: relative;
+  left: 50%;
+}
+
+.purchase-container button{
+  font-family: FreeSans, serif;
+  color: white;
+  font-weight: bold;
+  font-size: 0.85vw;
+  border: 0;
+  background-color: #3f3f3f;
+  width: 100%;
+  padding: 1.2vh 1.5vw;
+  transition: 0.25s ease;
+  border-radius: 0.5vw;
+}
+.purchase-container button:hover{
+  transition: 0.25s ease;
+  background-color: #4f4f4f;
+}
+
+
+.unselected-title{
+  text-align: center;
+  position: relative;
+  padding: 2vh;
+  left: 5%;
+  background-color: #2f2f2f;
+
+}
+
+.unselected-title p{
+  font-size: 1vw;
+
+}
+.dropdown p {
+  margin: 0;
+  padding: 1.2vh 0.5vw;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+}
+
+.dropdown p:hover {
+  transition: 0.25s ease-out;
+  color: #c4c4c4;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-header{
+  display: flex;
+  flex-direction: row;
+}
+.dropdown-header p{
+  color: gray;
+}
+.dropdown-header img{
+  width: 1vw;
+}
+.dropdown-content {
+  box-shadow: #1c1c1c 0 0.2vw 0.2vw;
+  border-radius: 0.25vw;
+  position: absolute;
+  left: 0.25vw;
+  min-width: 6vw;
+  background-color: #343434;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border-radius: 0.25vw;
+  font-size: 0.6vw;
+  color: #fff;
+  padding: 1.5vh;
+  text-decoration: none;
+  display: block;
+  transition: 0.25s ease-in;
+}
+
+.dropdown-content a:hover {
+  transition: 0.25s ease-in;
+  background-color: #555;
+}

@@ -1,0 +1,34 @@
+{
+  "network-sites": [
+    {
+      "value": "urban-exodus-news.org",
+      "routerLinkParams": ["news"],
+      "extraParam1": "news."
+    },
+    {
+
+      "value": "gods.net",
+      "routerLinkParams": ["anonymous"],
+      "extraParam1": "ftp."
+    }
+  ],
+  "additional-actions-panel": [
+    {
+      "value": "Провести Анализ"
+    }
+  ],
+  "anonymous-list": [
+    {
+      "value": "FFD2012"
+    },
+    {
+      "value": "VeilWalker"
+    },
+    {
+      "value": "FogFurry12"
+    },
+    {
+      "value": "EnigmaEclipse1"
+    }
+  ]
+}

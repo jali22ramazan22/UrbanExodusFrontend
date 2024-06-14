@@ -1,0 +1,14 @@
+<div class="additional-actions-dropdown" (appClickOutside)="onHandleClickOutside()">
+  <img src="../../../../assets/img/threebullets.png" alt="" (click)="onToggleCondition()">
+
+  @if(isMenuOpened){
+    <div class="dropdown-content-add" >
+      @for(item of additionalActionsItems; track item){
+        <a (click)="onSelectAction(item.value)">{{item.value}}</a>
+      }
+    </div>
+  }
+
+
+
+</div>

@@ -1,0 +1,8 @@
+<div class="search-hint-dropdown" >
+  @for(item of hintsItems | filter:searchText; track item){
+    <div class="search-hint-item" (click)="onSelectSite(item.value)">
+      <p>{{item.value}}</p>
+    </div>
+
+  }
+</div>

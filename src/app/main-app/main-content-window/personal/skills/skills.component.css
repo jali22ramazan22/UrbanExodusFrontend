@@ -1,0 +1,46 @@
+.skills-layout {
+  position: absolute;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  height: 95%;
+  width: 100%;
+}
+
+.info-layout {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  top: 3%;
+  height: 93%;
+  left: 5%;
+  gap: 1.5vh;
+}
+
+
+.level-bonus, .skills-info{
+  position: relative;
+  background-color: #424242;
+  box-shadow: black 2px 3px 3px;
+  border-radius: 0.6vw;
+
+}
+
+
+
+
+
+
+.skills-tree {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  top: 3%;
+  width: 92%;
+  height: 93%;
+  background-color: #2f2f2f;
+  left: 5%;
+  box-shadow: black 0.2vw 0.5vw 0.5vw;
+  border-radius: 0.6vw;
+}
+

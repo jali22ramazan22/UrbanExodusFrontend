@@ -1,0 +1,47 @@
+.perk-overlay{
+  display: grid;
+  width: 30vw;
+  background-color: #2b2b2b;
+  height: 35vh;
+  padding: 1vh;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  transform: translate(150%, 100%);
+}
+.perk-overlay-title{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+.perk-overlay-title p{
+  font-size: 1vw;
+  margin-left: 2vw;
+}
+
+button{
+  font-size: 0.8vw;
+  transition: 0.5s ease;
+  padding: 0.5vh;
+  border: none;
+  font-family: FreeSans, sans-serif;
+  color: #d5d5d5;
+  background-color: #1f1f1f;
+  line-height: 1.5;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+button:hover{
+  transition: 0.5s ease;
+  background-color: #666666;
+}
+
+.perk-overlay-description{
+  position: relative;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  top: 5%;
+  padding: 1vh;
+}

@@ -1,0 +1,17 @@
+<div >
+  <div class="info-layout-title" (click)="onSwitchPanel()">
+    <img [src]="computeImagePath('skill.png')">
+    <p>Навыки</p>
+  </div>
+  <div class="skills-list">
+    @for(item of skillsNavbarItems; track item){
+      <div class="skills-item"
+           (click)="onSelectSkill(item.value)"
+            [ngClass]="{'selected': item.value === (selectedSkill)}">
+        <img [src]="item.imgPath"/>
+        <p>{{ item.value }}</p>
+      </div>
+    }
+  </div>
+</div>
+

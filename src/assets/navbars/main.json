@@ -1,0 +1,74 @@
+{
+  "walletInfoItems": [
+    {
+      "imagePath": "btc.png",
+      "value": "BTC: 120"
+    },
+    {
+      "imagePath": "usd.png",
+      "value": "USD: 20.000"
+    },
+    {
+      "imagePath": "eur.png",
+      "value": "EUR: 4.220"
+    },
+    {
+      "imagePath": "level.png",
+      "value": "Уровень: 12"
+    }
+  ],
+  "sideBarItems": [
+    {
+      "imagePath": "info.png",
+      "value": "Википедия",
+      "type": "wiki"
+    },
+    {
+      "imagePath": "militaryMap.png",
+      "value": "Карта",
+      "type": "map"
+
+    },
+    {
+      "imagePath": "consoleIcon.png",
+      "value": "Консоль",
+      "type": "console"
+    },
+    {
+      "imagePath": "settings.png",
+      "value": "Настройки",
+      "type": "settings"
+    },
+    {
+      "imagePath": "logout.png",
+      "routerLinkParams": ["../auth"]
+    }
+  ],
+  "navLinkItems": [
+    {
+      "imagePath": "currencyicon.png",
+      "routerLinkParams": ["window/exchange"],
+      "value": "Биржа"
+    },
+    {
+      "imagePath": "networking.png",
+      "routerLinkParams": ["window/network"],
+      "value": "Сеть"
+    },
+    {
+      "imagePath": "marketicon.png",
+      "routerLinkParams": ["window/market"],
+      "value": "Покупки"
+    },
+    {
+      "imagePath": "tokenicon.png",
+      "routerLinkParams": ["window/personal"],
+      "value": "Персональное"
+    },
+    {
+      "imagePath": "shelterIcon.png",
+      "routerLinkParams": ["window/shelter"],
+      "value": "Убежище"
+    }
+  ]
+}

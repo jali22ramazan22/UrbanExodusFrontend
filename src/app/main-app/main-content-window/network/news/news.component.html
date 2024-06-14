@@ -1,0 +1,84 @@
+<app-fade-in-wrapper>
+<div class="news-layout">
+  <div class="main-news-section">
+    <div class="hottest-news">
+      <div class="news-title">
+        <a>Новости по Миру</a>
+
+      </div>
+      <div><hr></div>
+      <div class="hottest-news-list">
+        @for(item of hottestNews; track item){
+          <div class="hottest-news-item">
+            <div class="hottest-news-item-details">
+              <div class="hottest-news-item-header">
+                <div class="author">
+                  <a>{{ item.newsAuthor }}</a>
+                </div>
+                <div class="hottest-news-title">
+                  <a>{{ item.newsTitle }}</a>
+                </div>
+                <div class="published">
+                  <a>{{ item.published | PublishedTimePipe | async }}</a>
+                </div>
+                <div class="news-description">
+                  <a>{{item.newsDescription}}</a>
+                </div>
+              </div>
+              <div>
+                <button class="hottest-news-analysis-btn">
+                  <img src="assets/img/analysis.png">
+                  <p>Вся Статья</p>
+                </button>
+              </div>
+            </div>
+            <div class="hottest-news-item-image">
+              <img [src]="item.imgPath">
+            </div>
+          </div>
+          <div>
+            <hr>
+          </div>
+        }
+      </div>
+
+
+    </div>
+    <div class="extra-news">
+      <div class="news-title">
+        <a>Локальные Новости</a>
+        <a id="city-location">Город А</a>
+      </div>
+      <div>
+        <hr>
+      </div>
+
+      <div class="extra-news-list">
+        @for(item of localNews; track item){
+          <div class="extra-news-item">
+            <div>
+              <div class="extra-news-title">
+                <a>{{ item.newsTitle }}</a>
+              </div>
+              <div class="published">
+                <a>{{ item.published |  PublishedTimePipe | async}}</a>
+              </div>
+            </div>
+            <div class="extra-news-image">
+              <img [src]="item.imgPath">
+              <app-additional-actions-dropdown
+                [additionalActionsListParams]="['network', 'additional-actions-panel']"
+                [imageWidth]="1.7"/>
+            </div>
+
+          </div>
+          <div><hr></div>
+        }
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</app-fade-in-wrapper>

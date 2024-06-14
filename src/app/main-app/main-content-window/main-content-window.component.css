@@ -1,0 +1,75 @@
+.main-router-window{
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 20fr;
+  background-color: rgba(62, 62, 62, 0.95);
+  width: 64vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: black 0 0.25vh 0.25vh;
+  border-radius: 1vw;
+}
+.window-panel{
+  display: grid;
+  grid-template-columns: 40fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.window-panel img{
+  width: 1.2vw;
+  min-width: 5px;
+  padding-top: 0.25vw;
+  cursor: pointer;
+}
+
+.window-content{
+  -webkit-border-bottom-left-radius: 1vw;
+  -webkit-border-bottom-right-radius: 1vw;
+  background-color: #1c1c1c;
+}
+
+.navbar-selected{
+  transition: 0.5s ease-out;
+  background-color: #838383;
+  border-radius: 1vw;
+}
+
+.main-window-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.main-window-navbar p{
+  font-size: 0.85vw;
+
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+.main-window-navbar-item{
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+}
+
+
+
+.navbar-content-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
